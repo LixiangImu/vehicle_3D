@@ -1,0 +1,22 @@
+camera:
+  calibration_path: "data/calibration/camera_calibration.npz"
+  default_height: 10.0
+
+model:
+  path: "data/models/car.obj"
+  default_dimensions:
+    length: 4.5
+    width: 1.8
+    height: 1.5
+
+visualization:
+  window:
+    width: 1280
+    height: 720
+  grid:
+    size: 50
+    resolution: 1
+  camera:
+    distance_z: -200
+    height: 500
+    offset_x: 0

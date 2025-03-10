@@ -1,0 +1,7 @@
+numpy
+opencv-python
+trimesh
+pyrender
+Pillow
+torch
+ultralytics 
