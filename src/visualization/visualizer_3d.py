@@ -76,14 +76,13 @@ class Visualizer3D:
                 cy=camera_matrix[1, 2]
             )
             
-            # 设置外参矩阵
-            extrinsic = np.array([
-                [-0.99999, -0.0006611, -0.005333, 3.012],
-                [0.0035022, -0.83287, -0.55345, -8.7022],
-                [-0.0040759, -0.55346, 0.83286, 64.412],
+            # 设置外参矩阵（使用实际相机参数）
+            params.extrinsic = np.array([
+                [-0.99985, -0.012889, 0.011736, 1.1946],
+                [0.0034238, -0.80536, -0.59278, -14.139],
+                [0.017092, -0.59265, 0.80528, 179.87],
                 [0, 0, 0, 1]
             ])
-            params.extrinsic = extrinsic
             
             # 应用相机参数
             ctr.convert_from_pinhole_camera_parameters(params, allow_arbitrary=True)
