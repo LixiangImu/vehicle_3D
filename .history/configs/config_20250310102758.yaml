@@ -1,0 +1,29 @@
+camera:
+  calibration_path: "models/camera_calibration.npz"
+  default_height: 1.2 # 默认相机高度（米）
+
+model:
+  yolo_path: "models/pose.pt"
+  car_model_path: "models/car.obj"
+  default_dimensions:
+    length: 4.5
+    width: 1.8
+    height: 1.5
+
+visualization:
+  window:
+    width: 1280
+    height: 720
+  display_width: 800
+  display_height: 600
+  grid:
+    size: 50
+    resolution: 1
+  camera:
+    distance_z: -200
+    height: 500
+    offset_x: 0
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
